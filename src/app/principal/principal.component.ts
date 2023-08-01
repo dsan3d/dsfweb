@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./principal.component.less']
 })
 export class PrincipalComponent {
+  constructor(){}
 
 }
