@@ -9,6 +9,8 @@ import { RedessocialesComponent } from './redessociales/redessociales.component'
 import { PrincipalComponent } from './principal/principal.component';
 import { PoliticasprivacidadComponent } from './politicasprivacidad/politicasprivacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { PolityConversorCryptoComponent } from './polity-conversor-crypto/polity-conversor-crypto.component';
+import { PolityReproMp3Component } from './polity-repro-mp3/polity-repro-mp3.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     RedessocialesComponent,
     PrincipalComponent,
     PoliticasprivacidadComponent,
-    ContactoComponent
+    ContactoComponent,
+    PolityConversorCryptoComponent,
+    PolityReproMp3Component
   ],
   imports: [
     BrowserModule,
