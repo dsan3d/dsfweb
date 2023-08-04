@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.component.html',
   styleUrls: ['./principal.component.less']
 })
-export class PrincipalComponent {
-  constructor(){}
 
+
+export class PrincipalComponent {  
+ 
+  constructor(){}
+  
+
+  
 }

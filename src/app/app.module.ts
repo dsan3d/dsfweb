@@ -11,6 +11,9 @@ import { PoliticasprivacidadComponent } from './politicasprivacidad/politicaspri
 import { ContactoComponent } from './contacto/contacto.component';
 import { PolityConversorCryptoComponent } from './polity-conversor-crypto/polity-conversor-crypto.component';
 import { PolityReproMp3Component } from './polity-repro-mp3/polity-repro-mp3.component';
+import { CardappsComponent } from './cardapps/cardapps.component';
+import { Cardcults3dComponent } from './cardcults3d/cardcults3d.component';
+import { CardpinturaComponent } from './cardpintura/cardpintura.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { PolityReproMp3Component } from './polity-repro-mp3/polity-repro-mp3.com
     PoliticasprivacidadComponent,
     ContactoComponent,
     PolityConversorCryptoComponent,
-    PolityReproMp3Component
+    PolityReproMp3Component,
+    CardappsComponent,
+    Cardcults3dComponent,
+    CardpinturaComponent
   ],
   imports: [
     BrowserModule,
