@@ -19,17 +19,6 @@ export class PoliticasprivacidadComponent {
     this.mostrarMp3 = false;
   }
 
-/*
-  enlaceConversorClick(){
-    
-    let mydiv = document.getElementById('conversor') as HTMLDivElement;
-    if (mydiv.style.display != 'none'){
-      mydiv.style.display = 'block';
-    }
-    else{
-      mydiv.style.display='none' ;
-    }
-  }*/
 }
 
 

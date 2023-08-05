@@ -1,9 +1,11 @@
 <cabecera></cabecera>
 
 <div class="content">
-    <h2>Politicas Privacidad de mis Apps</h2>Conve
-    <p><button id="enlaceConversor" (click)="mostrarConversor= !mostrarConversor">{{mostrarConversor ? 'Ocultar' : 'Ver'}} Conversor Cryptomonedas</button>
-        <button id="enlaceMp3" (click)="mostrarMp3 = !mostrarMp3">{{mostrarMp3 ? 'Ocultar':'Ver'}} Reproductor Mp3</button></p>
+    <h2>Politicas Privacidad de mis Apps</h2>
+    <p><a href="#"><button>Página Principal</button></a>
+    <button id="enlaceConversor" 
+        (click)="mostrarConversor= !mostrarConversor">{{mostrarConversor ? 'Ocultar' : 'Ver'}} Conversor Cryptomonedas</button>
+    <button id="enlaceMp3" (click)="mostrarMp3 = !mostrarMp3">{{mostrarMp3 ? 'Ocultar':'Ver'}} Reproductor Mp3</button></p>
     
     <div id="conversor" class="textoprivacidad" *ngIf="mostrarConversor">
         <polityConversorCrypto></polityConversorCrypto>
