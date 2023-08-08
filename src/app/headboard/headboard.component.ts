@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'cabecera',
+  selector: 'heardboard',
   templateUrl: './headboard.component.html',
   styleUrls: ['./headboard.component.less']
 })

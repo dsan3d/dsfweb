@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './politicasprivacidad.component.html',
   styleUrls: ['./politicasprivacidad.component.less']
 })
-export class PoliticasprivacidadComponent {
+export class PoliticasprivacidadComponent implements OnInit {
   
   public mostrarConversor : boolean =false;
   public mostrarMp3 :boolean= false;
@@ -14,7 +14,7 @@ export class PoliticasprivacidadComponent {
   constructor(private route: ActivatedRoute){
    
   }
-  OnInit(){
+  ngOnInit(){
     this.mostrarConversor =false;
     this.mostrarMp3 = false;
   }

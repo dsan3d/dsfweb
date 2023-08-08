@@ -22,5 +22,8 @@ export class Cardcults3dComponent implements OnInit {
       }else{ this.contador++;}
       this.origenImagen= this.imgCults + this.imagenesCults[this.contador];
   }
+  verAnuncio(){
+    window.open('https://www.highcpmrevenuegate.com/xttvycsk?key=4817978832b9b6ea3c9f5576d3da4266',"_blank");
+  }
 
 }

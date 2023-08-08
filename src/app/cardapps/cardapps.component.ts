@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cardapps',
+  selector: 'app-cardapps',
   templateUrl: './cardapps.component.html',
   styleUrls: ['./cardapps.component.less']
 })
@@ -21,5 +21,8 @@ export class CardappsComponent implements OnInit {
           this.contador=0;
         }else{ this.contador++;}
         this.origenImagen= this.imgRutaApps + this.imagenesApps[this.contador];
+    }
+verAnuncio(){
+      window.open('https://www.highcpmrevenuegate.com/xttvycsk?key=4817978832b9b6ea3c9f5576d3da4266',"_blank");
     }
 }

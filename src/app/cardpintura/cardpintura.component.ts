@@ -23,5 +23,8 @@ export class CardpinturaComponent implements OnInit {
     }else{ this.contador++;}
     this.origenImagen= this.imgMinis + this.imagenesMinis[this.contador];
 }
+verAnuncio(){
+  window.open('https://www.highcpmrevenuegate.com/xttvycsk?key=4817978832b9b6ea3c9f5576d3da4266',"_blank");
+}
 
 }
