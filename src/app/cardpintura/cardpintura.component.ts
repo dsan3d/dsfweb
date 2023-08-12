@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SAnunciosService } from '../sanuncios.service';
+import { CardGaleriaService } from '../card-galeria.service';
 
 @Component({
   selector: 'cardpintura',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardpinturaComponent implements OnInit {
   protected origenImagen: string ="";
-  private imgMinis:string ="assets/minis/";
-  protected imagenesMinis:string[] =['cabrasoldado.png','angelsangre.png','hechicero.png','imperialhand.png','soldadocaos.png'];
-  protected contador =0;
+  private Vanuncios:SAnunciosService= new SAnunciosService();
+  private Gimagenes: CardGaleriaService = new CardGaleriaService();
+ 
 
   constructor(){}
   ngOnInit(): void {
@@ -18,13 +20,12 @@ export class CardpinturaComponent implements OnInit {
   }
 
   rotarImagenes() {
-    if (this.contador >= this.imagenesMinis.length-1){
-      this.contador=0;
-    }else{ this.contador++;}
-    this.origenImagen= this.imgMinis + this.imagenesMinis[this.contador];
+   this.Gimagenes.rotarImagenesMinis();
+   this.origenImagen = this.Gimagenes.imagenDevuelta;
 }
 verAnuncio(){
-  window.open('https://www.highcpmrevenuegate.com/xttvycsk?key=4817978832b9b6ea3c9f5576d3da4266',"_blank");
+    this.Vanuncios.VerAnuncios();
+ 
 }
 
 }

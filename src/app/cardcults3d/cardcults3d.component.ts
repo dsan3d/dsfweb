@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SAnunciosService } from '../sanuncios.service';
+import { CardGaleriaService } from '../card-galeria.service';
 
 @Component({
   selector: 'cardcults3d',
@@ -7,23 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cardcults3dComponent implements OnInit {
   protected origenImagen: string ="";
-  private imgCults:string ="assets/cults/";
-  protected imagenesCults:string[] =['apellidosanchez.jpg','escudofuertes.jpg','CuevaCovadonga.jpg','insigniatanith.png','separadororin.png'];
-  protected contador =0;
-
+  private Vanuncios:SAnunciosService= new SAnunciosService();
+  private Gimagenes:CardGaleriaService = new CardGaleriaService();
+  
   constructor(){}
   ngOnInit(): void {
     this.rotarImagenes();
     setInterval(() => this.rotarImagenes(),5000);  }
 
   rotarImagenes() {
-      if (this.contador >= this.imagenesCults.length-1){
-        this.contador=0;
-      }else{ this.contador++;}
-      this.origenImagen= this.imgCults + this.imagenesCults[this.contador];
+     this.Gimagenes.rotarImagenesCults();
+     this.origenImagen = this.Gimagenes.imagenDevuelta;
   }
   verAnuncio(){
-    window.open('https://www.highcpmrevenuegate.com/xttvycsk?key=4817978832b9b6ea3c9f5576d3da4266',"_blank");
+    this.Vanuncios.VerAnuncios();
+  
   }
 
 }
