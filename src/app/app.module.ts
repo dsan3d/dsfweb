@@ -14,6 +14,9 @@ import { PolityReproMp3Component } from './polity-repro-mp3/polity-repro-mp3.com
 import { CardappsComponent } from './cardapps/cardapps.component';
 import { Cardcults3dComponent } from './cardcults3d/cardcults3d.component';
 import { CardpinturaComponent } from './cardpintura/cardpintura.component';
+import { PrincipalpintorComponent } from './principalpintor/principalpintor.component';
+import { Principalcults3dComponent } from './principalcults3d/principalcults3d.component';
+import { PrincipalprogramasComponent } from './principalprogramas/principalprogramas.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { CardpinturaComponent } from './cardpintura/cardpintura.component';
     PolityReproMp3Component,
     CardappsComponent,
     Cardcults3dComponent,
-    CardpinturaComponent
+    CardpinturaComponent,
+    PrincipalpintorComponent,
+    Principalcults3dComponent,
+    PrincipalprogramasComponent
   ],
   imports: [
     BrowserModule,

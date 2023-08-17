@@ -17,7 +17,7 @@ export class CardappsComponent implements OnInit {
  
   ngOnInit(): void {
     this.rotarImagenes();
-    setInterval(() => this.rotarImagenes(),5000);    
+    setInterval(() => this.rotarImagenes(),5000);
   }
   rotarImagenes(){
     this.GImagenes.rotarImagenesApps();

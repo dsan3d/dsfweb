@@ -1,16 +1,17 @@
 import { Injectable, OnInit } from '@angular/core';
+import { ImgApps, ImgCults, ImgSource, ImgMinis } from './models/tablas';
 
-enum card { apps, cults, pintura};
+
 @Injectable({
   providedIn: 'root',
   
 })
 export class CardGaleriaService implements OnInit {
 
-  private imgSource: string[]=['assets/apps/','assets/cults/','assets/minis/'];
-  protected imagenesMinis:string[] =['cabrasoldado.png','angelsangre.png','hechicero.png','imperialhand.png','soldadocaos.png'];
-  protected imagenesApps: string[] =['cronos.png','GajaresCoches.png','imagendosconversor.png','Reproductormp3.png'];
-  protected imagenesCults:string[] =['apellidosanchez.jpg','escudofuertes.jpg','CuevaCovadonga.jpg','insigniatanith.png','separadororin.png'];
+  private imgSource: string[]= ImgSource;
+  protected imagenesMinis:string[] =ImgMinis;
+  protected imagenesApps: string[] =ImgApps;
+  protected imagenesCults:string[] =ImgCults;
   protected cardOrigen:string="";
   public imagenDevuelta:string="";
   private contador=0;
