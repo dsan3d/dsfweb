@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SAnunciosService } from '../sanuncios.service';
 
 @Component({
   selector: 'app-principal',
@@ -8,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class PrincipalComponent implements OnInit {  
- 
+  private Vanuncios:SAnunciosService = new SAnunciosService();
   constructor(){}
   ngOnInit(): void {
     
   }
+  verAnuncio(){
+    this.Vanuncios.VerAnuncios();  }
 
   
 }

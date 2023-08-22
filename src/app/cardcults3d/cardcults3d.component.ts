@@ -22,8 +22,7 @@ export class Cardcults3dComponent implements OnInit {
      this.origenImagen = this.Gimagenes.imagenDevuelta;
   }
   verAnuncio(){
-    this.Vanuncios.VerAnuncios();
-  
+    this.Vanuncios.VerAnuncios();  
   }
 
 }
