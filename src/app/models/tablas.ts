@@ -1,7 +1,9 @@
 /** USO ESTOS ARRAYS COMO TABLAS DE DATOS ESTATICOS PARA LA WEB */
 
-export const ImgSource: string[] = [
-    'assets/apps/','assets/cults/','assets/minis/']
+export const ImgSources: Map<string,string> = new Map()
+ImgSources.set('apps','assets/apps/')
+ImgSources.set('cults','assets/cults/')
+ImgSources.set('minis','assets/minis/')
 
 export const ImgMinis: string[] =[
     'cabrasoldado.png','angelsangre.png','hechicero.png','imperialhand.png','soldadocaos.png']

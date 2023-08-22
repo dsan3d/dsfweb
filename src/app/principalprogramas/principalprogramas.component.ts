@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImgApps, ImgSource } from '../models/tablas';
+import { ImgApps, ImgSources } from '../models/tablas';
 import { SAnunciosService } from '../sanuncios.service';
 
 @Component({
@@ -13,17 +13,24 @@ export class PrincipalprogramasComponent implements OnInit {
   protected ImagenConversor: string ="";
   protected ImagenMpTres: string ="";
   protected ImagenJPeseta: string ="";
+  private ImgSource: string | undefined = ImgSources.get('apps');
   private Vanuncios:SAnunciosService =new SAnunciosService();
 
-  constructor(){}
+  constructor(){
+   
+  }
   ngOnInit(): void {
-    this.ImagenCronometro = ImgSource[0]+ ImgApps[0];
-    this.ImagenGarajes = ImgSource[0] + ImgApps[1];
-    this.ImagenConversor = ImgSource[0] + ImgApps[2];
-    this.ImagenMpTres = ImgSource[0] + ImgApps[3];
-    this.ImagenJPeseta = ImgSource[0] + ImgApps[4];
+    this.CargarImagenes();
   }
 
+  CargarImagenes(){
+    this.ImagenCronometro = this.ImgSource + ImgApps[0];
+    this.ImagenGarajes = this.ImgSource + ImgApps[1];
+    this.ImagenConversor = this.ImgSource + ImgApps[2];
+    this.ImagenMpTres = this.ImgSource + ImgApps[3];
+    this.ImagenJPeseta = this.ImgSource + ImgApps[4];
+
+  }
   verAnuncio(){
     this.Vanuncios.VerAnuncios();  }
 

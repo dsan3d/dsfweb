@@ -1,5 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
-import { ImgApps, ImgCults, ImgSource, ImgMinis } from './models/tablas';
+import { ImgApps, ImgCults, ImgSources, ImgMinis } from './models/tablas';
 
 
 @Injectable({
@@ -8,7 +8,7 @@ import { ImgApps, ImgCults, ImgSource, ImgMinis } from './models/tablas';
 })
 export class CardGaleriaService implements OnInit {
 
-  private imgSource: string[]= ImgSource;
+  private imgSource: Map<string,string> = ImgSources;
   protected imagenesMinis:string[] =ImgMinis;
   protected imagenesApps: string[] =ImgApps;
   protected imagenesCults:string[] =ImgCults;
@@ -37,15 +37,18 @@ export class CardGaleriaService implements OnInit {
   }
   rotarImagenesApps(){
     this.ComprobarContador(this.imagenesApps.length);
-    this.imagenDevuelta = this.imgSource[0] + this.imagenesApps[this.contador];
+    this.imagenDevuelta = this.imgSource.get('apps') + this.imagenesApps[this.contador];
+    //this.imagenDevuelta = this.imgSource[0] + this.imagenesApps[this.contador];
   }
   rotarImagenesCults(){
-    this.ComprobarContador(this.imagenesCults.length);    
-    this.imagenDevuelta= this.imgSource[1] + this.imagenesCults[this.contador];
+    this.ComprobarContador(this.imagenesCults.length);   
+    this.imagenDevuelta  =   this.imgSource.get('cults') + this.imagenesCults[this.contador];
+    //this.imagenDevuelta= this.imgSource[1] + this.imagenesCults[this.contador];
   }
   rotarImagenesMinis(){
     this.ComprobarContador(this.imagenesMinis.length);
-    this.imagenDevuelta= this.imgSource[2] + this.imagenesMinis[this.contador];
+    this.imagenDevuelta = this.imgSource.get('minis') + this.imagenesMinis[this.contador];
+    //this.imagenDevuelta= this.imgSource[2] + this.imagenesMinis[this.contador];
   }
 
 }
